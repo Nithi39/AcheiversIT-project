@@ -1,0 +1,690 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 40px;
+    max-width: 100%;
+    margin-top: 130px;
+  }
+  
+  .product-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+  }
+  
+  .thumbnail {
+    /* border: 2px solid transparent; */
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .thumbnail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid grey;
+  }
+  
+  .thumbnail.active img {
+    opacity: 1;
+    border: 2px solid white;
+  }
+  
+  .main-image img {
+    width: 620px;
+    height: auto;
+    object-fit: cover;
+    margin-left: 130px;
+    margin-right: 150px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .product-details h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .product-details h2 {
+    font-size: 18px;
+    color: #ccc;
+  }
+  
+  .ratings .stars {
+    color: red;
+    margin-right: 8px;
+  }
+  
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -2px;
+  }
+  
+  .new-price {
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  
+  .old-price {
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .discount {
+    color: #00ff73;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .tax-info {
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+  }
+  
+  .stock-status {
+    background-color: green;
+    color: white;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+  }
+  
+  .offers h3 {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+  
+  .offer-box {
+    border: 1px solid #444;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    background-color: #1c1c1c;
+    width: 180px;
+    font-size: 14px;
+    height: 60px;
+  }
+  
+  .add-to-cart {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+    width: 200px;
+    margin-top: -5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #c40000;
+  }
+  
+  .offer{
+    display: flex;
+    gap: 15px;
+  }
+
+  .box{
+    display: flex;
+    gap: 75px;
+  }
+
+  .prdt-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+
+
+
+
+
+
+
+
+
+  .btn-1{
+    width: 140px;
+    height: 40px;
+    background-color:rgb(255, 9, 9);
+    color: white;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .btn-2{
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: #121212;
+    color: white;
+  }
+
+  .btn-2:hover{
+    background-color:  rgb(255, 9, 9);
+    transition: 0.7s;
+  }
+
+
+
+
+
+  
+  /* This product Specification details */
+
+  .product-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: #b0b8c1;
+    font-family: sans-serif;
+    background: #121212;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .product-specs div {
+    display: flex;
+    font-size: 16px;
+  }
+  
+  .product-specs .label {
+    width: 160px; /* Adjust this width to match your spacing */
+  }
+  
+  .product-specs .value {
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+ .value{
+    padding-left: 190px;
+      }
+    
+
+
+
+
+  
+ .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px; /* gap between cards */
+  row-gap: 30px;
+}
+
+.product-card {
+  background-color:black;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 0px;
+  width: 330px; /* fixed width */
+  box-sizing: border-box;
+  height: 450px;
+}
+
+.product-img {
+  height: 185px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 12px;
+  background-color: #121212;
+  padding: 10px 0;
+}
+
+.rating {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.new-price {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.add-btn1 {
+  background-color: red;
+  border: none;
+  color: white;
+  width: 80%;
+  margin-top: 32px;
+  padding: 10px 0;
+  border-radius: 2px;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: white;
+}
+
+.product-desc {
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 8px;
+}
+
+
+
+/* Advantages Section */
+
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #121212;
+  padding: 20px 80px;
+  color: #fff;
+  margin-bottom: 55px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+  text-align: left;
+  height: 100px;
+}
+
+.feature i {
+  font-size: 26px;
+  color: red;
+}
+
+.feature h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  text-wrap: none;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+
+/* This is the css for footern section */
+
+.footer-container {
+  width: 1520px;
+  height: 400px;
+  padding: 40px 20px;
+ background-color: black;
+
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.footer-col {
+  flex: 1 ; /* makes 4 columns with spacing */
+  margin: 10px;
+  min-width: 200px;
+ 
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.4;
+  }
+
+.email, .submit {
+  padding: 8px;
+  margin-top: 18px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.submit{
+  background-color: rgb(255, 9, 9);
+  color: white;
+  width: 140px;
+ border-radius: 6px;
+ border: none;
+}
+.email{
+  background-color:#121212;
+  color: white;
+}
+.footer-col p{
+  color: white;
+
+}
+
+.row2 .socialIcons i{
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  margin: 0 15px;
+  transition: 0.5s;
+}
+
+.row2 .socialIcons i:hover{
+  color: rgb(255, 9, 9);
+}
+.col p{
+  color: white;
+}
+.row2 hr{
+  opacity: 0.7;
+}
+.row2{
+  display: flex;
+  padding-top: 12px;
+}
+.footer{
+  background-color: black;
+}
+.row .footer-col{
+  margin-left: 40px;
+  }
+hr{
+  opacity: 0.7;
+  border-width: 1px;
+}
+.row2 .socialIcons{
+  margin-right: 75px;
+}
+#col{
+  margin-left: 2px;
+}
+.modal-title p{
+padding-top: 7px;
+}
+.form-control::placeholder {
+  color: white; /* Change this to any color you like */
+   opacity: 0.4;
+   font-size: 15px; 
+}
+
+.form-control{
+  height: 47px;
+  border-radius: 3px;
+}
+#signup{
+  height: 43px;
+  border-radius: 3px;
+}
+
+
+
+
+.modal-content{
+  background-color: rgb(20, 20, 20);
+}
+.modal-header{
+  color: white;
+  padding-bottom: 3px;
+}
+.btn-close{
+  color: white;
+}
+.modal-dialog{
+  background-color: rgb(20, 20, 20) ;
+  width: 430px;
+  padding: 0 20px;
+}
+.button{
+  display: flex;
+  gap: 6px;
+}
+.login{
+  text-align: center;
+  margin-top: 10px;
+}
+#signup{
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .main-image img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .product-images {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .product-details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .value {
+    padding-left: 0;
+  }
+
+  .box,
+  .prdt-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .features-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .feature {
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product-grid {
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thumbnail img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+
+  .main-image img {
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      max-width: 620px;
+      height: auto;
+      object-fit: cover;
+    }
+    
+  }
+
+  .add-to-cart,
+  .add-btn1,
+  .btn-1,
+  .btn-2 {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .feature h4 {
+    font-size: 16px;
+  }
+
+  .feature p {
+    font-size: 12px;
+  }
+
+  .modal-dialog {
+    width: 100%;
+    padding: 0;
+  }
+
+
+@media (max-width: 480px) {
+  .product-details h1 {
+    font-size: 22px;
+  }
+
+  .product-details h2 {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .product-specs div {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .product-specs .label {
+    width: 100%;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .footer-col {
+    margin-left: 0;
+  }
+
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .row2 .socialIcons {
+    margin: 0;
+  }
+
+  .row2 hr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .footer-col {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .row2 .socialIcons {
+    margin: 15px 0 0;
+  }
+}

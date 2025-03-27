@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+main{
+  background-color: #121212;
+}
+body{
+   background-color: #121212;
+   height: 1500px;
+}
+.container{
+    margin-left: 2px;
+    width: 100%;
+}
+h1{
+    color: white;
+    margin-left: -9px;
+}
+h6{
+  color: grey;
+
+}
+h2{
+color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    /* flex-direction: row; */
+    margin-top: 14px;
+    gap: 35px;
+}
+   
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 5px;
+    margin-right: -200px;
+    background-color: black;
+}
+.modal-content{
+    background-color: rgb(20, 20, 20);
+}
+.modal-header{
+    color: white;
+    padding-bottom: 3px;
+}
+.btn-close{
+    color: white;
+}
+.modal-dialog{
+    background-color: rgb(20, 20, 20) ;
+    width: 430px;
+    padding: 0 20px;
+}
+.button{
+    display: flex;
+    gap: 6px;
+}
+.login{
+    text-align: center;
+    margin-top: 10px;
+}
+#signup{
+    margin-top: 10px;
+}
+/* This is the css for footern section */
+
+.footer-container {
+    width: 100%;
+    height: 400px;
+    padding: 40px 20px;
+   background-color: black;
+
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.footer-col {
+    flex: 1 ; /* makes 4 columns with spacing */
+    margin: 10px;
+    min-width: 200px;
+   
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.4;
+    }
+
+.email, .submit {
+    padding: 8px;
+    margin-top: 18px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.submit{
+    background-color: rgb(255, 9, 9);
+    color: white;
+    width: 140px;
+   border-radius: 6px;
+   border: none;
+}
+.email{
+    background-color:#121212;
+    color: white;
+}
+.footer-col p{
+    color: white;
+
+}
+
+.row2 .socialIcons i{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+.row2 .socialIcons i:hover{
+    color: rgb(255, 9, 9);
+}
+.col p{
+    color: white;
+}
+.row2 hr{
+    opacity: 0.7;
+}
+.row2{
+    display: flex;
+    padding-top: 12px;
+}
+.footer{
+    background-color: black;
+}
+.row .footer-col{
+    margin-left: 40px;
+    }
+hr{
+    opacity: 1;
+    border-width: 3px;
+}
+.row2 .socialIcons{
+    margin-right: 75px;
+}
+#col{
+    margin-left: 2px;
+}
+.modal-title p{
+padding-top: 7px;
+}
+.form-control::placeholder {
+    color: white; /* Change this to any color you like */
+     opacity: 0.4;
+     font-size: 15px; 
+  }
+
+  .form-control{
+    height: 47px;
+    border-radius: 3px;
+  }
+  #signup{
+    height: 43px;
+    border-radius: 3px;
+  }
+
+
+
+
+
+  .card-body img{
+    height: 230px;
+    width: 230px;
+  }
+
+  .prod-imgs{
+    display: flex;
+    flex: 1;
+    margin: 70px 30px;
+    gap: 49px;
+  }
+
+  .card-body{
+    background-color: #121212;
+  }
+
+  .card-title{
+    color: white;
+    text-align: center;
+    padding-bottom: 5px ;
+    opacity: 0.5;
+    font-size: 18px;
+  }
+
+  .price-1{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+
+  .card{
+    border: none;
+  }
+   
+  .container-2{
+    margin-top: 30px ;
+    margin-bottom: 70px;
+  }
+
+  .prdt-btn{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .btn-2{
+    width: 130px;
+    height: 40px;
+    background-color: #121212;
+    border-radius: 3px;
+    border: none;
+    color: white;
+  }
+
+  .btn-1{
+    width: 80px;
+    height: 40px;
+    background-color:rgb(255, 9, 9);
+    color: white;
+    border-radius: 3px;
+    border: none;
+  }
+  .btn-2:hover{
+    background-color: rgb(255, 9, 9) ;
+    transition: 0.7s;
+  }
+
+
+  /* Section -1 carousel indicator radio buttons */
+
+  .carousel-indicators input[type="radio"] {
+    width: 10px;
+    height: 10px;
+    gap: 20px;
+  }
+
+ .carousel-indicators{
+    gap: 6px;
+ }
+
+ /* This is the end  */
+
+/* This is fpthe card of 4 columns and 3 rows */
+
+ .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px; /* gap between cards */
+    row-gap: 30px;
+  }
+
+  .product-card {
+    background-color:black;
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 0px;
+    width: 330px; /* fixed width */
+    box-sizing: border-box;
+    height: 450px;
+  }
+
+  .product-img {
+    height: 185px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 12px;
+    background-color: #121212;
+    padding: 10px 0;
+  }
+
+  .rating {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 14px;
+  }
+
+  .new-price {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .add-btn1 {
+    background-color: red;
+    border: none;
+    color: white;
+    width: 80%;
+    margin-top: 32px;
+    padding: 10px 0;
+    border-radius: 2px;
+  }
+
+  .product-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: white;
+  }
+
+  .product-desc {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 8px;
+  }
+
+
+
+
+  /* Advantages Section */
+
+  .features-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    padding: 20px 80px;
+    color: #fff;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px;
+    text-align: left;
+    height: 100px;
+  }
+  
+  .feature i {
+    font-size: 26px;
+    color: red;
+  }
+  
+  .feature h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    text-wrap: none;
+  }
+  
+  .feature p {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+
+
+

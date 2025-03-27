@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./navbar.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
+
+    
+</head>
+<body>
+ <!-- This is the header section -->
+ <header>
+    <h2 class="logo">Tech-Shop</h2>
+    <ul>
+        <li class="list-item"><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a></li>
+        <li class="list-item"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            <!-- <span class="position-absolute translate-middle badge rounded-pill bg-danger">
+                4
+            </span> -->
+    </li>
+        <li class="list-item user-dropdown-wrapper"><a href="#"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+            <div class="dropdown-hover">
+                <strong>Hello!</strong>
+                <p >Access account and manage orders</p>
+                <a href="#" class="btn btn-outline-light w-51my-2 "data-bs-toggle="modal" data-bs-target="#signupModal" style="height: 45px; align-content: center; border-radius: 3px;">Login / Signup</a>
+                <hr class="line">
+                <p >Please Login</p>
+              </div>
+        </li>
+    </ul>
+</header>
+
+    <main class="container">
+        <section class="order-summary">
+            <h2 class="ord">Order Summary (4 Items)</h2>
+            <div class="price-details">
+                <p>Original Price: <span>₹12,979</span></p>
+                <p>Discount: <span class="discount">- ₹1,002</span></p>
+                <p>Delivery: <span class="free">Free</span></p>
+            </div>
+            <hr>
+            <h3>Total Price <span class="price"> ₹12,846</span></h3>
+
+            <button class="checkout-btn">Checkout</button>
+        </section> 
+
+       
+<section class="cart-items">
+    <div class="scroll-container">
+
+    <article class="item">
+     
+        <div class="product">
+            <img src="../images/drive-download-20250326T152132Z-001 - Copy/jbl660nc-1.png" alt="JBL Live 650">
+            <div class="item-details">
+                <h3>JBL Live 650NC Wireless Over-Ear</h3>
+                <p>₹3,999 <span class="strike">₹5,499</span></p>
+                <!-- <input type="number" value="1" min="1" max="10"> -->
+                <div class="incrementbtn" style="background-color: black; width: 64px; ">
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">-</button>
+                    <span class="mx-2">1</span>
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">+</button>
+                </div>
+
+            </div>
+        </div>
+
+        <hr> 
+
+        <div class="product">
+            <img src="../images/drive-download-20250326T152132Z-001 - Copy/boat518-1.png" alt="Boat Rockerz 370">
+            <div class="item-details">
+                <h3>Boat Rockerz 370 On-Ear Wireless</h3>
+                <p>₹1,239 <span class="strike">₹1,799</span></p>
+                <!-- <input type="number" value="1" min="1" max="10"> -->
+                <div class="incrementbtn" style="background-color: black; width: 64px; ">
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">-</button>
+                    <span class="mx-2">1</span>
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">+</button>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="product">
+            <img src="../images/drive-download-20250326T152132Z-001 - Copy/boat131-3.png" alt="Boat Rockerz 370">
+            <div class="item-details">
+                <h3>Boat Airdopes 131 Wireless In-Ear</h3>
+                <p>₹1,239 <span class="strike">₹1,799</span></p>
+                <!-- <input type="number" value="1" min="1" max="10"> -->
+                <div class="incrementbtn" style="background-color: black; width: 64px; ">
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">-</button>
+                    <span class="mx-2">1</span>
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">+</button>
+                </div>
+        
+
+            </div>
+        </div>
+        <hr>
+        <div class="product">
+            <img src="../images/drive-download-20250326T152132Z-001 - Copy/boat518-1.png" alt="Boat Rockerz 370">
+            <div class="item-details">
+                <h3>Boat Rockerz 370 On-Ear Wireless</h3>
+                <p>₹1,239 <span class="strike">₹1,799</span></p>
+                <!-- <input type="number" value="1" min="1" max="10"> -->
+                <div class="incrementbtn" style="background-color: black; width: 64px; ">
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">-</button>
+                    <span class="mx-2">1</span>
+                    <button class="btn btn-outline-light" style="width: 25px; background-color: red; color: white;">+</button>
+                </div>
+
+            </div>
+        </div>
+    </article>
+</div>
+</section> 
+</main>
+
+<!-- This is the Footer Section of my website -->
+
+<footer>
+    <div class="footer-container">
+        <div class="row">
+
+            <div class="footer-col" id="col">
+                <h4 style="font-size: 25px;">Tech-Shop</h4>
+                <p>Subscribe to our Email alerts to receive early discount offers,and new products info.</p>
+                <form action="">
+                    <input type="email" placeholder="Email-adress" class="email">
+                    <input type="submit" value="Subscribe" class="submit">
+                </form>
+               
+             </div>
+
+        <div class="footer-col">
+           <h4>Help</h4>
+           <ul>
+           <li><a href="#">FAQs</a></li>
+           <li><a href="#">Track Order</a></li>
+           <li><a href="#">Cancel Order</a></li>
+           <li><a href="#">Return Order</a></li>
+           <li><a href="#">Warranty info</a></li>
+           </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+            </div>
+
+        <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Service Centers</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Affiliates</a></li>
+            </ul>
+         </div>
+
+         
+
+        </div>
+<hr>
+    <div class="row2">
+        <div class="col">
+            <p>&#169; 2025| All Rights Reserved. Built by | N V NITHISH KUMAR |</p>
+        </div>
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</div>
+  </footer>
+
+
+ </body>
+</html>
